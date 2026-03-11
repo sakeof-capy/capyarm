@@ -1,0 +1,7 @@
+/artifacts/
+/build/
+/.vscode/
+/docs/output/
+/.idea/
+/cmake-build-*/
+/core/server_root/include/di_generated/
