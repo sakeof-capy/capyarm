@@ -19,6 +19,7 @@ target_sources(${BINARY_NAME}
 target_link_libraries(${BINARY_NAME} 
     PRIVATE 
         capydi
+        httplib::httplib
 )
 
 target_include_directories(${BINARY_NAME}
