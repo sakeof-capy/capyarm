@@ -4,7 +4,9 @@ project(capydi)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_subdirectory(dependencies/capydi)
+if (PROJECT_IS_TOP_LEVEL)
+    include(cmake/Dependencies.cmake)
+endif()
 
 find_package(Doxygen REQUIRED)
 
@@ -16,4 +18,7 @@ add_custom_target(capyarm_generate_docs
 )
 
 add_subdirectory(core)
-add_subdirectory(testing)
+
+if (PROJECT_IS_TOP_LEVEL)
+    add_subdirectory(testing)
+endif()

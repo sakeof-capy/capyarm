@@ -1,3 +1,0 @@
-[submodule "dependencies/capydi"]
-	path = dependencies/capydi
-	url = git@github.com:sakeof-capy/capydi.git
